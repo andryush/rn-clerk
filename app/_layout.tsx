@@ -1,4 +1,5 @@
 import { ClerkProvider, useAuth } from '@clerk/clerk-expo';
+import { config, GluestackUIProvider } from '@gluestack-ui/themed';
 import { Slot } from 'expo-router';
 import * as SecureStore from 'expo-secure-store';
 import { SafeAreaView } from 'react-native';
@@ -28,9 +29,11 @@ const InitialLayout = () => {
 const RootLayout = () => {
   return (
     <ClerkProvider publishableKey={CLERK_KEY} tokenCache={tokenCache}>
-      <SafeAreaView>
-        <InitialLayout />
-      </SafeAreaView>
+      <GluestackUIProvider config={config.theme}>
+        <SafeAreaView>
+          <InitialLayout />
+        </SafeAreaView>
+      </GluestackUIProvider>
     </ClerkProvider>
   );
 };
