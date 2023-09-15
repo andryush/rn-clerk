@@ -32,9 +32,7 @@ const RootLayout = () => {
   return (
     <ClerkProvider publishableKey={CLERK_KEY} tokenCache={tokenCache}>
       <GluestackUIProvider config={config}>
-        <SafeAreaView>
-          <InitialLayout />
-        </SafeAreaView>
+        <InitialLayout />
       </GluestackUIProvider>
     </ClerkProvider>
   );
