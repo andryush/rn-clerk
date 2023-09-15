@@ -1,8 +1,7 @@
-import { ClerkProvider, useAuth } from '@clerk/clerk-expo';
+import { ClerkProvider } from '@clerk/clerk-expo';
 import { GluestackUIProvider } from '@gluestack-ui/themed';
 import { Slot } from 'expo-router';
 import * as SecureStore from 'expo-secure-store';
-import { SafeAreaView } from 'react-native';
 
 import { config } from '../gluestack-ui.config';
 
