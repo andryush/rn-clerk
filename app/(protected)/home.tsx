@@ -1,7 +1,7 @@
-import { View } from 'react-native';
+import { Text } from 'react-native';
 
 const Home = () => {
-  return <View>in home</View>;
+  return <Text>in home</Text>;
 };
 
 export default Home;

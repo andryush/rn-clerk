@@ -4,6 +4,23 @@ const PublicLayout = () => {
   return (
     <Stack>
       <Stack.Screen name={'login'} options={{ headerShown: false }} />
+      <Stack.Screen
+        name={'register'}
+        options={{
+          headerTitle: '',
+          gestureEnabled: true,
+          headerBackButtonMenuEnabled: true,
+          headerTransparent: true,
+        }}
+      />
+      <Stack.Screen
+        name={'forgotPassword'}
+        options={{
+          headerTitle: 'Forgot Password',
+          gestureEnabled: true,
+          headerBackButtonMenuEnabled: true,
+        }}
+      />
     </Stack>
   );
 };

@@ -12,7 +12,7 @@ const AuthLayout = () => {
       <Stack.Screen
         name={'home'}
         options={{
-          headerTitle: 'Clerk Auth App',
+          headerTitle: 'Home',
         }}
       />
     </Stack>
