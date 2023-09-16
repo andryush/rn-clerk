@@ -11,6 +11,7 @@ const PublicLayout = () => {
           gestureEnabled: true,
           headerBackButtonMenuEnabled: true,
           headerTransparent: true,
+          headerTintColor: '#00C38E',
         }}
       />
       <Stack.Screen
