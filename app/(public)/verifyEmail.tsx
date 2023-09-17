@@ -8,7 +8,6 @@ import {
   InputField,
   Text,
 } from '@gluestack-ui/themed';
-import { router } from 'expo-router';
 
 import BlurredContainer from '../components/BlurredContainer';
 
