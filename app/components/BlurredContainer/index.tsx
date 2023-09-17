@@ -6,19 +6,24 @@ import { DimensionValue } from 'react-native';
 type Props = {
   header?: string;
   blurIntensity?: number;
-  boxHeight?: DimensionValue;
+  marginTop?: DimensionValue;
   children: ReactNode;
 };
 
 const BlurredContainer = ({
   header,
   blurIntensity = 80,
-  boxHeight = '50%',
+  marginTop = '50%',
   children,
 }: Props) => {
   return (
-    <Box paddingLeft={20} paddingRight={20}>
-      <Box height={boxHeight} />
+    <Box
+      paddingLeft={20}
+      paddingRight={20}
+      flexDirection={'column-reverse'}
+      justifyContent={'center'}
+      height={'100%'}
+      marginTop={marginTop}>
       <BlurView
         intensity={blurIntensity}
         tint={'dark'}
