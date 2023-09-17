@@ -11,7 +11,17 @@ const PublicLayout = () => {
           gestureEnabled: true,
           headerBackButtonMenuEnabled: true,
           headerTransparent: true,
-          headerTintColor: '#00C38E',
+          headerTintColor: '#FFF',
+        }}
+      />
+      <Stack.Screen
+        name={'verifyEmail'}
+        options={{
+          headerTitle: '',
+          gestureEnabled: true,
+          headerBackButtonMenuEnabled: true,
+          headerTransparent: true,
+          headerTintColor: '#FFF',
         }}
       />
       <Stack.Screen

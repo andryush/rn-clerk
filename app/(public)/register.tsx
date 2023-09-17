@@ -20,7 +20,7 @@ const Register = () => {
         source={require('../../assets/images/bg-signup.jpg')}
         size={'full'}
       />
-      <BlurredContainer header={'Sign Up'} blurIntensity={80} boxHeight={'45%'}>
+      <BlurredContainer header={'Sign Up'} blurIntensity={80} boxHeight={'46%'}>
         <Input variant="outline" size="xl" bgColor={'$white'}>
           <InputField type={'text'} placeholder={'Email'} />
         </Input>
@@ -30,7 +30,11 @@ const Register = () => {
         <Input variant="outline" size="xl" bgColor={'$white'}>
           <InputField type={'password'} placeholder={'Repeat password'} />
         </Input>
-        <Button size="xl" variant="solid" action="primary">
+        <Button
+          size="xl"
+          variant="solid"
+          action="primary"
+          onPress={() => router.push('/verifyEmail')}>
           <ButtonText>Sign Up</ButtonText>
         </Button>
         <HStack alignItems={'center'} gap={6}>
