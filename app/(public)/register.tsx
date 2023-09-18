@@ -21,13 +21,18 @@ const Register = () => {
           position={'absolute'}
           source={require('../../assets/images/bg-signup.jpg')}
           size={'full'}
+          alt={'signup-background'}
         />
         <BlurredContainer
           header={'Sign Up'}
           blurIntensity={80}
           marginTop={'32%'}>
           <Input variant="outline" size="xl" bgColor={'$white'}>
-            <InputField type={'text'} placeholder={'Email'} />
+            <InputField
+              type={'text'}
+              placeholder={'Email'}
+              autoCapitalize={'none'}
+            />
           </Input>
           <Input variant="outline" size="xl" bgColor={'$white'}>
             <InputField type={'password'} placeholder={'Password'} />

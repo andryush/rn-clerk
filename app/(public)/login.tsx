@@ -21,10 +21,15 @@ const Login = () => {
           position={'absolute'}
           source={require('../../assets/images/bg.jpg')}
           size={'full'}
+          alt={'signin-background'}
         />
         <BlurredContainer header={'Sign In'} marginTop={'45%'}>
           <Input variant="outline" size="xl" bgColor={'$white'}>
-            <InputField type={'text'} placeholder={'Email'} />
+            <InputField
+              type={'text'}
+              placeholder={'Email'}
+              autoCapitalize={'none'}
+            />
           </Input>
           <Input variant="outline" size="xl" bgColor={'$white'}>
             <InputField type={'password'} placeholder={'Password'} />

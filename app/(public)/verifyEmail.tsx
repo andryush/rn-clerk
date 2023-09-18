@@ -20,13 +20,18 @@ const VerifyEmail = () => {
           position={'absolute'}
           source={require('../../assets/images/bg-verify.jpg')}
           size={'full'}
+          alt={'verify-code-background'}
         />
         <BlurredContainer
           header={'Verification'}
           blurIntensity={80}
           marginTop={'15%'}>
           <Input variant="outline" size="xl" bgColor={'$white'}>
-            <InputField type={'text'} placeholder={'Verification code'} />
+            <InputField
+              type={'text'}
+              placeholder={'Verification code'}
+              autoCapitalize={'none'}
+            />
           </Input>
           <Button size="xl" variant="solid" action="primary">
             <ButtonText>Verify</ButtonText>
